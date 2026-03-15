@@ -1,0 +1,20 @@
+.root {
+  display: flex;
+  list-style: none;
+}
+
+.listItem {
+  padding-inline: 10px;
+
+  & + & {
+    border-left: 1px solid var(--border-color);
+  }
+}
+
+.button {
+  text-decoration: underline;
+  appearance: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+}

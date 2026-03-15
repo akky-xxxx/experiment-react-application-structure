@@ -1,0 +1,13 @@
+.root {
+  display: grid;
+  row-gap: 20px;
+  width: 100%;
+  padding: 20px;
+  border-width: 1px;
+}
+
+.header {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}

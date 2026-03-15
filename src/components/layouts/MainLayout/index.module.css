@@ -1,0 +1,21 @@
+.root {
+  display: grid;
+  column-gap: 20px;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+.rootTwoColumn {
+  grid-template-columns: 1fr 30%;
+}
+
+.main {
+  grid-column: 1/2;
+}
+
+.asideElementWrapper {
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+  grid-column: 2/3;
+  align-self: start;
+}

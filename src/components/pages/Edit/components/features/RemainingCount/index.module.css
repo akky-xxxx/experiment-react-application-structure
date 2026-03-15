@@ -1,0 +1,8 @@
+.root {
+  display: grid;
+  row-gap: 10px;
+}
+
+.progress {
+  width: 100%;
+}

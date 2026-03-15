@@ -1,0 +1,22 @@
+.base {
+  padding-inline: 5px;
+  font-size: 12px;
+  color: var(--text-primary-color);
+  border-radius: 3px;
+}
+
+.required {
+  background-color: var(--color-ff0000);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-cc0000);
+  }
+}
+
+.any {
+  background-color: var(--color-ffaa00);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--color-aa6600);
+  }
+}

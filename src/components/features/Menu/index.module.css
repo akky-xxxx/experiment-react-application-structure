@@ -1,0 +1,5 @@
+.ul {
+  display: flex;
+  column-gap: 10px;
+  list-style: none;
+}

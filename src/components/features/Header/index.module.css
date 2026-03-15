@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--header-height);
+  padding: 20px;
+  background-color: var(--background-primary-color);
+  border-bottom: 1px solid var(--border-color);
+}
