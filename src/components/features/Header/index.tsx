@@ -2,6 +2,7 @@
 
 import { clsx } from "clsx"
 
+import { routes } from "@shared/utilities/routes"
 import { useTranslationsService } from "@shared/utilities/usedTranslations.service"
 
 import styles from "./index.module.css"
@@ -22,7 +23,7 @@ export const Header: FC<Props> = (props) => {
   return (
     <header className={rootClasses}>
       <p>
-        <Link href="/">{t("common.siteName")}</Link>
+        <Link href={routes.home()}>{t("common.siteName")}</Link>
       </p>
 
       {rightContentsElement !== undefined && (

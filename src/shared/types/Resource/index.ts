@@ -1,3 +1,4 @@
+import type { PostDetail } from "@shared/types/Resource/PostDetail"
 import type { Register } from "@shared/types/Resource/Register"
 
 type PageCommon = {
@@ -25,6 +26,7 @@ export type Resource = {
     navigation: {
       edit: string
       list: string
+      posts: string
       register: string
       top: string
     }
@@ -33,6 +35,8 @@ export type Resource = {
   pages: {
     edit: PageCommon & Register
     list: PageCommon
+    postDetail: PageCommon & PostDetail
+    posts: PageCommon
     register: PageCommon & Register
     top: PageCommon
   }

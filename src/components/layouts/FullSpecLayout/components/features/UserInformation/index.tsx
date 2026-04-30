@@ -8,5 +8,11 @@ export const UserInformation: FC = () => {
   const { user } = useService()
   const displayName = user?.username ?? "---"
 
-  return <div>{displayName}</div>
+  return (
+    <div>
+      logged in by
+      {" "}
+      {displayName}
+    </div>
+  )
 }
