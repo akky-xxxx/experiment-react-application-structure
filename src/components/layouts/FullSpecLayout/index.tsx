@@ -1,3 +1,5 @@
+import { Suspense } from "react"
+
 import { LocaleSwitch } from "@features/LocaleSwitch"
 import { Menu } from "@features/Menu"
 import { UserInformation } from "@layouts/FullSpecLayout/components/features/UserInformation"
@@ -15,7 +17,11 @@ export const FullSpecLayout: FcWithChildren = (props) => {
       headerRightContentsElement={(
         <div className={styles.headerRightContentsElementWrapper}>
           <LocaleSwitch />
-          <Menu />
+
+          <Suspense>
+            <Menu />
+          </Suspense>
+
           <UserInformation />
         </div>
       )}

@@ -1,24 +1,22 @@
-import { useTranslationsService } from "@shared/utilities/usedTranslations.service"
+import { View } from "@features/Menu/View"
+import { getUser } from "@shared/utilities/apiClient"
+import { getTypedTranslations } from "@shared/utilities/getTypedTranslations"
 
-import styles from "./index.module.css"
 import { Link } from "../../../modules/i18n/navigation"
 
-export const Menu = () => {
-  const t = useTranslationsService()
+import type { ComponentProps } from "react"
 
-  return (
-    <nav>
-      <ul className={styles.ul}>
-        <li>
-          <Link href="/list">{t("common.navigation.list")}</Link>
-        </li>
-        <li>
-          <Link href="/register">{t("common.navigation.register")}</Link>
-        </li>
-        <li>
-          <Link href="/edit">{t("common.navigation.edit")}</Link>
-        </li>
-      </ul>
-    </nav>
-  )
+export const Menu = async () => {
+  const t = await getTypedTranslations()
+  const user = await getUser()
+  const props = {
+    Link,
+    editLabel: t("common.navigation.edit"),
+    isLoggedIn: user !== null,
+    listLabel: t("common.navigation.list"),
+    postsLabel: t("common.navigation.posts"),
+    registerLabel: t("common.navigation.register"),
+  } as const satisfies ComponentProps<typeof View>
+
+  return <View {...props} />
 }

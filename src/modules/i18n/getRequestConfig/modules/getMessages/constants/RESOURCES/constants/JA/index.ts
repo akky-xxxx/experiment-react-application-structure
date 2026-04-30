@@ -3,6 +3,7 @@ import type { Resource } from "@shared/types/Resource"
 const PAGE_NAMES = {
   EDIT: "編集",
   LIST: "一覧",
+  POSTS: "投稿一覧",
   REGISTER: "登録",
   TOP: "トップ",
 } as const
@@ -18,6 +19,7 @@ export const JA = {
     navigation: {
       edit: PAGE_NAMES.EDIT,
       list: PAGE_NAMES.LIST,
+      posts: PAGE_NAMES.POSTS,
       register: PAGE_NAMES.REGISTER,
       top: PAGE_NAMES.TOP,
     },
@@ -47,6 +49,10 @@ export const JA = {
     list: {
       pageDescription: `${PAGE_NAMES.LIST}ページディスプリプション`,
       pageTitle: PAGE_NAMES.LIST,
+    },
+    posts: {
+      pageDescription: `${PAGE_NAMES.POSTS}ページディスプリプション`,
+      pageTitle: PAGE_NAMES.POSTS,
     },
     register: {
       aside: {

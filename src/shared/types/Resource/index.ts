@@ -25,6 +25,7 @@ export type Resource = {
     navigation: {
       edit: string
       list: string
+      posts: string
       register: string
       top: string
     }
@@ -33,6 +34,7 @@ export type Resource = {
   pages: {
     edit: PageCommon & Register
     list: PageCommon
+    posts: PageCommon
     register: PageCommon & Register
     top: PageCommon
   }

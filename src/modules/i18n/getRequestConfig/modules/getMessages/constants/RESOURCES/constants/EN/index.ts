@@ -3,6 +3,7 @@ import type { Resource } from "@shared/types/Resource"
 const PAGE_NAMES = {
   EDIT: "Edit",
   LIST: "List",
+  POSTS: "Posts",
   REGISTER: "Register",
   TOP: "Top",
 } as const
@@ -18,6 +19,7 @@ export const EN = {
     navigation: {
       edit: PAGE_NAMES.EDIT,
       list: PAGE_NAMES.LIST,
+      posts: PAGE_NAMES.POSTS,
       register: PAGE_NAMES.REGISTER,
       top: PAGE_NAMES.TOP,
     },
@@ -47,6 +49,10 @@ export const EN = {
     list: {
       pageDescription: `pageDescription for ${PAGE_NAMES.LIST}`,
       pageTitle: PAGE_NAMES.LIST,
+    },
+    posts: {
+      pageDescription: `pageDescription for ${PAGE_NAMES.POSTS}`,
+      pageTitle: PAGE_NAMES.POSTS,
     },
     register: {
       aside: {
